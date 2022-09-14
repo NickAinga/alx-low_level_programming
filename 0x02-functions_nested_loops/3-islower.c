@@ -2,7 +2,7 @@
 /**
   *_islower - Return 1 if letter is lowercase, 0 if not.
   *@c: single letter input
-  *Returns: if int c is lowercase, 0 if otherwise
+  *Return: if int c is lowercase, 0 if otherwise
   */
 int _islower(int c)
 {
