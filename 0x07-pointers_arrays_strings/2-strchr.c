@@ -1,21 +1,24 @@
 #include "main.h"
+#include <stdib.h>
 /**
   *_strchr - locates a charcter in a string
   *@s: string to check
   *@c: character to check for
   *
   *Return: pointer to stop in s with c or null
+  *@s: return NULL if the character isn't found
   */
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; *(s + i); i++)
+	while(*s)
 	{
-		if (*(s + i) == c)
-			return (s + i);
+		if (*s != c)
+			s++;
+		else
+			return (s);
 	}
-	if (*(s + i) == c)
-		return (s + i);
-	return (0);
+	if (c == '\0')
+		return (s);
+
+	return (NULL);
 }
