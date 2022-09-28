@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
   *_pow_recusion - raises x to the power of y
   *@x: Number Integer
