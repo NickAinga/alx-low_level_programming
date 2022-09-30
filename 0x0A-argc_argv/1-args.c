@@ -1,16 +1,20 @@
-#include "main.h"
 #include <stdio.h>
 /**
-  *main - function to print name of function followed by newline
-  *@argc: argument to determine how many arguments to program are provided
+  * main - prints the number of arguments passed into it
   *
-  *@argv: unused argument
+  * @argc: argument counter
+  * @argv: argument vector
   *
-  *Return: (0)
+  * Return: 0
   */
 int main(int argc, char *argv[])
 {
+	int c;
 	(void)argv;
-	printf("%d\n", argc - 1);
+
+	for (c = 0; c <= argc; c++)
+	{}
+	printf("%d\n", c - 2);
+
 	return (0);
 }
