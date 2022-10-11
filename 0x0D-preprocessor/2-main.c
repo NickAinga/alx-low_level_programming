@@ -2,8 +2,9 @@
 
 /**
   *main - main function
-  *REturn: int (0 or 1)
+  *Return: int (0 or 1)
   */
+
 int main(void)
 {
 	printf("%s\n", __FILE__);
